@@ -5,7 +5,9 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -68,6 +70,23 @@
                         <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="115.0" text="Réseau Web" />
                     </children>
                 </HBox>
+                <VBox layoutX="14.0" layoutY="115.0" prefHeight="200.0" prefWidth="173.0">
+                    <children>
+                        <RadioButton mnemonicParsing="false" text="Ajouter Noeud">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="a" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Supprimer Noeud" toggleGroup="$a" />
+                        <RadioButton mnemonicParsing="false" text="Ajouter Arc" toggleGroup="$a" />
+                        <RadioButton mnemonicParsing="false" text="Supprimer Arc" toggleGroup="$a" />
+                        <RadioButton mnemonicParsing="false" text="Ajouter Paquet" toggleGroup="$a" />
+                        <RadioButton mnemonicParsing="false" text="Supprimer Paquet" toggleGroup="$a" />
+                        <RadioButton mnemonicParsing="false" text="Afficher Détails" toggleGroup="$a" />
+                        <RadioButton mnemonicParsing="false" text="Navigation" toggleGroup="$a" />
+                        <RadioButton mnemonicParsing="false" text="Zoom" toggleGroup="$a" />
+                    </children>
+                </VBox>
             </children>
         </AnchorPane>
     </children>
